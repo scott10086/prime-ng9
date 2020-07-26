@@ -1,0 +1,53 @@
+/* ==================================
+ * Helpers
+ * ================================== */
+
+@import "helpers/variables";
+@import "helpers/variables1";
+
+$primaryColor: #00355e;
+$primaryLightColor: #005293;
+$primaryLightEndColor: #3b8ec8;
+$primaryTextColor: #242424;
+$primaryTextHoverColor: #ffffff;
+$accentColor: #ffc107;
+$accentLightColor: #ffecb3;
+$accentTextColor: #242424;
+$activeMenuItemTextColor: #00355e;
+$darkActiveMenuItemTextColor: #00355e;
+$darkMenuItemTextColor: #dee0e3;
+$darkMenuItemInactiveTextColor: #757575;
+$darkMenuItemHoverBgColor: #545454;
+$darkSidemenuBgColor: #343434;
+$darkMenuBgColor: #424242;
+
+$primaryLightEndColor: #3b8ec8;
+$primaryTextHoverColor: #ffffff;
+$activeMenuItemTextColor: #00355e;
+$darkActiveMenuItemTextColor: #00355e;
+$darkMenuItemTextColor: #dee0e3;
+$darkMenuItemInactiveTextColor: #757575;
+$darkMenuItemHoverBgColor: #545454;
+$darkSidemenuBgColor: #343434;
+$darkMenuBgColor: #424242;
+$primaryColor: #368ee0;
+$primaryDarkColor: #55b0ff;
+$primaryBackColor: #ffffff;
+$hoverTextColor: #fff;
+$primaryLightColor: #55b0ff;
+$primaryTextColor: #ffffff;
+$accentColor: #368ee0;
+$accentDarkColor: #ffa000;
+$accentLightColor: #ffecb3;
+$accentTextColor: #cccccc;
+
+@import "helpers/variables/_base.scss";
+@import "helpers/variables/_components.scss";
+@import "helpers/variables/_partials.scss";
+
+@import "helpers/mixins/_button.scss";
+@import "helpers/mixins/_box-shadow.scss";
+@import "helpers/mixins/_clearfix.scss";
+@import "helpers/mixins/_link.scss";
+
+@import "helpers/_functions.scss";

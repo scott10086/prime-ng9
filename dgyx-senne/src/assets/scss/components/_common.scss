@@ -1,0 +1,74 @@
+body {
+  .ui-widget,
+  .ui-widget .ui-widget {
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+  }
+
+  .ui-widget-content {
+    background-color: $contentBgColor;
+    .fa-caret-right {
+      height: 100%;
+      line-height: 35px;
+      margin-right: 10px !important;
+    }
+  }
+
+  .ui-widget-header {
+    background-color: #eeeeee;
+    color: #434343;
+
+    .fa {
+      color: $primaryTextColor;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 21px;
+    }
+  }
+
+  .ui-state-active,
+  .ui-state-highlight {
+    background-color: $accentColor;
+    color: #fff !important;
+
+    .fa {
+      color: $accentTextColor;
+    }
+  }
+
+  .ui-widget:disabled,
+  .ui-state-disabled {
+    filter: Alpha(Opacity=35);
+    background-image: none;
+    cursor: auto !important;
+  }
+
+  .ui-corner-all {
+    @include border-radius($borderRadius);
+  }
+
+  .ui-corner-top {
+    @include border-radius-top($borderRadius);
+  }
+
+  .ui-corner-bottom {
+    @include border-radius-bottom($borderRadius);
+  }
+
+  .ui-corner-left {
+    @include border-radius-left($borderRadius);
+  }
+
+  .ui-corner-right {
+    @include border-radius-right($borderRadius);
+  }
+
+  a {
+    color: $primaryColor;
+  }
+
+  .ui-dialog-mask {
+    z-index: 0 !important;
+  }
+}

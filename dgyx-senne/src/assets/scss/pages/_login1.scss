@@ -3,14 +3,14 @@
 
   .login-title {
     height: 15%;
-    background-image: url("/assets/img/logo_denglu.png");
+    background-image: url($loginLogoImg);
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: 10%;
   }
 
   .main-content {
-    background-image: url("/assets/img/bg.png");
+    background-image: url($loginBgImg);
     width: 100%;
     height: 70%;
     background-size: cover;
@@ -151,7 +151,7 @@
         border-radius: 6px;
         border: none;
         background-color: #5680d4;
-        letter-spacing: 6px;
+        letter-spacing:6px;
 
         &.left {
           float: left;

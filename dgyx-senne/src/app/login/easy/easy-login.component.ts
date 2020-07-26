@@ -4,20 +4,19 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-easy-login',
   templateUrl: './easy-login.component.html',
-  styleUrls: ['./esay-login.component.scss']
 })
 
 export class EasyLoginComponent {
 
   verifySuccess = false;
-  verifyCode = false;
+  verifyCode = '45yu';
   verifyCodeImgData = '';
   userInfo = {
     userLoginId: '',
     password: '',
     logintype: 'PWD',
     logintypedesc: '密码验证',
-    verifyCode: ''
+    verifyCode: '45y'
   };
   errorMsgs: string[] = [];
   successMsg: string[] = [];
@@ -35,7 +34,14 @@ export class EasyLoginComponent {
   }
 
   queryVerifyCode() { }
-  verifyCodeKeyup() { }
+  verifyCodeKeyup() {
+    this.verifySuccess = (this.verifyCode && this.verifyCode === this.userInfo.verifyCode);
+
+    if (!this.verifySuccess && this.userInfo.verifyCode.length >= 4) {
+      this.queryVerifyCode();
+      this.userInfo.verifyCode = '';
+    }
+  }
   pressEnter(e) { }
 
   initVerifyCode(verifyCode: string): string {

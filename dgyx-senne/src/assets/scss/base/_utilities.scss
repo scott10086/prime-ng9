@@ -1,0 +1,129 @@
+/* Spacing
+   ================================== */
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+);
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacers {
+    .#{$abbrev}-#{$size} {
+      #{$prop}: $length;
+    }
+
+    .#{$abbrev}t-#{$size},
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-top: $length;
+    }
+
+    .#{$abbrev}r-#{$size},
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-right: $length;
+    }
+
+    .#{$abbrev}b-#{$size},
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-bottom: $length;
+    }
+
+    .#{$abbrev}l-#{$size},
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-left: $length;
+    }
+  }
+}
+
+/* Display
+   ================================== */
+.d-line { display: inline; }
+.d-block { display: block; }
+.d-inline-block { display: inline-block; }
+
+/* Clearfix
+   ================================== */
+.clearfix {
+  @include clearfix();
+}
+
+/* Text
+   ================================== */
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.font-weight-light { font-weight: $font-weight-light; }
+.font-weight-normal { font-weight: $font-weight-normal; }
+.font-weight-bold { font-weight: $font-weight-bold; }
+
+/* Border
+   ================================== */
+@each $theme, $value in $theme-colors {
+  .border-#{$theme} {
+    border-color: $value;
+  }
+}
+
+/* Border-radius
+   ================================== */
+.rounded {
+  border-radius: $border-radius;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.rounded-0 {
+  border-radius: 0;
+}
+
+/* Sizing
+   ================================== */
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+);
+
+@each $prop, $abbrev in (width: w, height: h) {
+  @each $size, $length in $sizes {
+    .#{$abbrev}-#{$size} { #{$prop}: $length; }
+  }
+}
+
+.mw-100 { max-width: 100%; }
+.mh-100 { max-height: 100%; }
+
+/* Colors
+   ================================== */
+@each $theme, $value in $theme-colors {
+  .text-#{$theme} {
+    color: $value;
+  }
+}
+
+@each $theme, $value in $theme-colors {
+  .bg-#{$theme} {
+    background-color: $value;
+  }
+}
+
+/* Box shadow
+   ================================== */
+@each $theme, $value in $theme-colors {
+  .bsd-around-#{$theme} {
+    @include box-shadow-around($color: $value);
+  }
+}
+
+/* Float
+   ================================== */
+.float-left { float: left; }
+.float-right { float: right; }

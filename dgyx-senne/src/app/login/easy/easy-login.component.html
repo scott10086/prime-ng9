@@ -1,7 +1,7 @@
 <div class="main-login">
   <div class="login-title"></div>
   <div class="main-content">
-    <div class="main-login-warp" (keyup.enter)="pressEnter($event)">
+    <div class="main-login-warp" (keyup.enter)="pressEnter($event)" style="box-sizing: unset">
       <div class="main-login-title">
         <h4 class="title-text">公司业务综合管理平台</h4>
       </div>
@@ -22,8 +22,7 @@
       <div class="login-row">
         <div class="input-group group-left">
           <span [ngClass]="{'fa': true, 'ui-icon-email': !verifySuccess, 'ui-icon-lock right': verifySuccess}"></span>
-          <input type="text" [(ngModel)]="userInfo.verifyCode" placeholder="验证码" autocomplete="off" (keyup)="verifyCodeKeyup()"
-            [readonly]="verifySuccess">
+          <input type="text" [(ngModel)]="userInfo.verifyCode" placeholder="验证码" autocomplete="off" (keyup)="verifyCodeKeyup()" [readonly]="verifySuccess">
         </div>
         <div *ngIf="!verifySuccess" class="verify-code" (click)="queryVerifyCode()">
           <div *ngIf="verifyCode" class="contain">

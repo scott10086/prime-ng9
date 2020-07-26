@@ -1,0 +1,41 @@
+// 自定义天津按钮样式
+@mixin custom_button() {
+  background-color: $buttonBgColor;
+  border-radius: 17px;
+  height: 34px;
+  line-height: 34px;
+  width: auto;
+  padding: 0 25px;
+  color: $buttonColor;
+  border: solid 1px $buttonColor;
+
+  .fa {
+    color: $buttonColor;
+    width: 0px;
+    top: 0;
+    line-height: 34px;
+    margin-top: 0;
+  }
+
+  &:hover {
+    color: $buttonHoverColor;
+    background-color: $buttonHoverBgColor;
+    .fa {
+      color: $buttonHoverColor;
+    }
+  }
+
+  span {
+    &.ui-button-text {
+      line-height: 34px !important;
+    }
+  }
+
+  &:disabled {
+    background-color: $buttonDisabledBgColor;
+    color: $buttonDisabledColor;
+    .fa {
+      color: $buttonDisabledColor;
+    }
+  }
+}

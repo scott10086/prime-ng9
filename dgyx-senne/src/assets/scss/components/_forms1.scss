@@ -1,0 +1,188 @@
+body {
+    button {
+        @include custom_button();
+        
+        &.weaken-query {
+            @include custom_button();
+        }
+    
+        &.weaken-reset {
+            @include custom_button();
+        }   
+
+    }
+
+    .ui-button {
+        @include custom_button();
+    }
+
+    input.ui-inputtext {
+        height: 28px!important;
+        line-height: 28px!important;
+        &:disabled {
+            background-color: $disabledBgColor;
+            color: $disabledColor;
+        }
+        &:read-only {
+            background-color: $readOnlyBgColor!important;
+            color: $readOnlyColor;
+        }
+    }
+
+    .ui-dropdown {
+        height: 28px!important;
+        label.ui-inputtext {
+            height: 28px!important;
+            line-height: 28px!important;
+        }
+        .ui-dropdown-trigger {
+            height: 28px;
+        }
+    }
+
+    .ui-inputgroup {
+        .ui-button {
+            &:not(.ui-datepicker-trigger) {
+                background-color: $tjPrimaryColor;
+                height: 28px!important;
+                border-radius: 0;
+                padding: 0 10px;
+                line-height: 28px;
+
+                .fa {
+                    color: #fff;
+                    font-size: 18px;
+                    width: 18px;
+                    border-radius: 0;
+                    line-height: 28px;
+                }
+            }
+
+            &.ui-datepicker-trigger {
+                border: none;
+            }
+
+            .ui-button-text {
+                color: #fff;
+                line-height: 28px!important;
+            }
+            
+        }
+    }
+
+    .ui-calendar {
+        input.ui-inputtext {
+            background-color: transparent!important;
+        }
+        .ui-button {
+            &.ui-datepicker-trigger {
+                border: none;
+                height: 28px;
+                bottom: 0;
+                span.fa-calendar {
+                    border-radius: 0;
+                    line-height: 24px;
+                    top: 0;
+                    margin-top: 0;
+                }
+
+                &:hover {
+                    span.fa-calendar {
+                        color: #757575;
+                    }
+                }
+            }
+        }
+    }
+
+    .ui-fileupload {
+        .ui-fileupload-buttonbar {
+            .ui-button {
+                @include custom_button();
+
+                &:enabled:hover {
+                    color: $buttonHoverColor;
+                    background-color: $buttonHoverBgColor;
+                    .fa {
+                        color: $buttonHoverColor;
+                    }
+                }
+            }
+        }
+
+        .ui-fileupload-content {
+            .ui-fileupload-row {
+                .ui-button {
+                    @include custom_button();
+                }
+            }
+        }
+    }
+
+    .ui-autocomplete { 
+        .ui-autocomplete-dropdown {
+            &.ui-button.ui-button-icon-only {
+                color: #333;
+                background-color: transparent;
+                border-color: transparent;
+            }
+        }
+    }
+
+    .ui-chkbox {
+        width: 17px;
+        height: 17px;
+        .ui-chkbox-box {
+            width: 17px;
+            height: 17px;
+            &.ui-state-active {
+                border-color: $tjPrimaryColor;
+                background-color: $tjPrimaryColor;
+                .fa {
+                  font-size: 13px;
+                  border-radius: 0;
+                  width: 100%;
+                  height: 16px;
+                  margin-left: 0;
+                  margin-top: 0;
+                }
+              }
+        }
+    }
+
+    .ui-radiobutton {
+        .ui-radiobutton-box {
+            width: 17px;
+            height: 17px;
+
+            &.ui-state-active {
+                border-color: $tjPrimaryColor;
+                background-color: transparent;
+              }
+
+            .fa-circle {
+                background-color: $tjPrimaryColor;
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+    .ui-multiselect-panel.ui-widget {
+
+    }
+
+    .dialog-containe {
+        > div {
+            > .btn-row {
+                .edit-btn {
+                    button {
+                        margin: 0 10px;
+                        @include custom_button();
+                    }
+                  }
+            }
+        }
+    }
+}
