@@ -4,13 +4,13 @@
       .tab-content-row {
         .ui-inputgroup {
           &.ui-inputdown {
-            >p-dropdown {
+            > p-dropdown {
               .ui-dropdown {
                 width: 100px !important;
               }
             }
           }
-          >p-dropdown {
+          > p-dropdown {
             .ui-dropdown {
               width: 152px !important;
             }
@@ -47,7 +47,7 @@
             .ui-inputtext {
               width: 91px !important;
             }
-            >p-dropdown {
+            > p-dropdown {
               width: 91px !important;
               .ui-dropdown {
                 width: 91px !important;
@@ -57,7 +57,7 @@
           .ui-inputtext {
             width: 133px !important;
           }
-          >p-dropdown {
+          > p-dropdown {
             width: 133px !important;
             .ui-dropdown {
               width: 133px !important;
@@ -78,8 +78,8 @@
     input.ui-inputtext {
       width: 182px !important;
     }
-    .ui-multiselect{
-      width: 182px !important;      
+    .ui-multiselect {
+      width: 182px !important;
     }
     .dialog-containe {
       div {
@@ -113,7 +113,7 @@
             .ui-inputtext {
               width: 86px !important;
             }
-            >p-dropdown {
+            > p-dropdown {
               width: 86px !important;
               .ui-dropdown {
                 width: 86px !important;
@@ -123,7 +123,7 @@
           .ui-inputtext {
             width: 126px !important;
           }
-          >p-dropdown {
+          > p-dropdown {
             width: 126px !important;
             .ui-dropdown {
               width: 126px !important;
@@ -147,8 +147,8 @@
     input.ui-inputtext {
       width: 170px !important;
     }
-    .ui-multiselect{
-      width: 170px !important;      
+    .ui-multiselect {
+      width: 170px !important;
     }
     .dialog-containe {
       div {
@@ -182,7 +182,7 @@
             .ui-inputtext {
               width: 81px !important;
             }
-            >p-dropdown {
+            > p-dropdown {
               width: 81px !important;
               .ui-dropdown {
                 width: 81px !important;
@@ -192,7 +192,7 @@
           .ui-inputtext {
             width: 116px !important;
           }
-          >p-dropdown {
+          > p-dropdown {
             width: 116px !important;
             .ui-dropdown {
               width: 116px !important;
@@ -213,8 +213,8 @@
     input.ui-inputtext {
       width: 160px !important;
     }
-    .ui-multiselect{
-      width: 160px !important;      
+    .ui-multiselect {
+      width: 160px !important;
     }
     .dialog-containe {
       div {
@@ -248,7 +248,7 @@
             .ui-inputtext {
               width: 78px !important;
             }
-            >p-dropdown {
+            > p-dropdown {
               width: 78px !important;
               .ui-dropdown {
                 width: 78px !important;
@@ -258,7 +258,7 @@
           .ui-inputtext {
             width: 112px !important;
           }
-          >p-dropdown {
+          > p-dropdown {
             width: 112px !important;
             .ui-dropdown {
               width: 112px !important;
@@ -279,8 +279,8 @@
     input.ui-inputtext {
       width: 155px !important;
     }
-    .ui-multiselect{
-      width: 155px !important;      
+    .ui-multiselect {
+      width: 155px !important;
     }
     .dialog-containe {
       div {
@@ -327,18 +327,18 @@ body {
       }
     }
   }
-  .box-left-menu+.content {
+  .box-left-menu + .content {
     width: 82.5%;
     margin-left: 24px;
   }
   .box-left-menu,
-  .box-left-menu+.content {
+  .box-left-menu + .content {
     float: left;
   }
   .top-table {
     margin-top: 0;
   }
-  .top-table+.botton-table {
+  .top-table + .botton-table {
     margin-top: 50px;
   }
   .botton-table {
@@ -347,13 +347,13 @@ body {
   .table-main {
     border-top: 2px solid #ccc;
   }
-  .tab-adaptive-row{
-    >div+div+div+div{
-      margin-top:18px;
+  .tab-adaptive-row {
+    > div + div + div + div {
+      margin-top: 18px;
     }
   }
-  .edit-error-msg{
-    background:#ffcbc8; 
+  .edit-error-msg {
+    background: #ffcbc8;
   }
   .tab-main-row {
     width: 80%;
@@ -372,20 +372,20 @@ body {
   }
   .tab-content-row {
     &.tab-title-row {
-      >div {
+      > div {
         display: block;
-        width:60% !important;
-        margin-left:1.3% !important;
-        span{
-          width:16% !important;
+        width: 60% !important;
+        margin-left: 1.3% !important;
+        span {
+          width: 16% !important;
           margin-right: 3%;
           vertical-align: top;
         }
-        .ui-inputtext{
-          width:70% !important;
+        .ui-inputtext {
+          width: 70% !important;
         }
-        textarea{
-          width:70%;
+        textarea {
+          width: 70%;
           outline: none;
         }
       }
@@ -393,13 +393,13 @@ body {
   }
   .tab-textarea-row {
     height: 100px;
-    >div {
+    > div {
       width: 100% !important;
-      >span {
+      > span {
         width: 11% !important;
         margin-right: 1.6% !important;
       }
-      >textarea {
+      > textarea {
         overflow-x: hidden;
         outline: none;
         padding: 0 10px;
@@ -417,11 +417,11 @@ body {
         }
       }
     }
-    >div {
+    > div {
       width: 49%;
       display: inline-block;
       text-align: center;
-      >div {
+      > div {
         display: inline-block;
         #tab-main-input {
           width: 10% !important;
@@ -435,17 +435,17 @@ body {
   .table-main {
     .tab-content-row {
       width: 95%;
-      >div {
+      > div {
         width: 33%;
         vertical-align: top;
-        >span {
+        > span {
           width: 33%;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
         }
       }
-      >div+div {
+      > div + div {
         margin-left: 0;
       }
       .ui-inputgroup {
@@ -455,7 +455,7 @@ body {
           .ui-inputtext {
             width: 100px;
           }
-          >p-dropdown {
+          > p-dropdown {
             width: 100px;
             margin-left: -4px;
           }
@@ -463,7 +463,7 @@ body {
         .ui-inputtext {
           width: 152px;
         }
-        >p-dropdown {
+        > p-dropdown {
           width: 152px !important;
         }
         .ui-button {
@@ -476,16 +476,16 @@ body {
       }
     }
   }
-  .tab-main-row>div {
+  .tab-main-row > div {
     display: inline-block;
     width: 41%;
     margin-top: 9px;
     vertical-align: top;
   }
-  .tab-main-row>div+div {
+  .tab-main-row > div + div {
     margin-left: 17%;
   }
-  .tab-main-row>div>span {
+  .tab-main-row > div > span {
     vertical-align: sub;
     color: #333;
     display: inline-block;
@@ -495,8 +495,8 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    &.multiSelect-span{
-      vertical-align:super;
+    &.multiSelect-span {
+      vertical-align: super;
     }
     i {
       color: red;
@@ -512,7 +512,7 @@ body {
       overflow: hidden;
     }
   }
-  .tab-main-row>div>div {
+  .tab-main-row > div > div {
     display: inline-block;
   }
   .tab-nodata {
@@ -537,7 +537,7 @@ body {
         background: #3196e2;
       }
     }
-    >button+button {
+    > button + button {
       margin-left: 40px;
     }
   }
@@ -561,7 +561,7 @@ body {
   }
   .dialog-containe {
     position: relative;
-    >.ui-g-12 {
+    > .ui-g-12 {
       padding: 0;
     }
     div {
@@ -590,7 +590,7 @@ body {
             width: 95%;
             margin-top: 3px;
             height: 23px;
-            line-height:20px;
+            line-height: 20px;
           }
         }
       }
@@ -624,8 +624,8 @@ body {
     padding: 5px 10px !important;
     white-space: inherit !important;
   }
-  .readonly-input{
-    &:read-only{
+  .readonly-input {
+    &:read-only {
       background: #e8e8e8;
     }
   }
@@ -640,7 +640,7 @@ body {
     font-size: $inputFontSize;
     border-color: $inputBorderColor;
     border-style: solid;
-    @include transition(border-color .3s);
+    @include transition(border-color 0.3s);
     @include border-radius(0px);
     &:focus,
     &.ui-state-focus {
@@ -672,20 +672,20 @@ body {
       -moz-transition: 0.3s ease all;
       -webkit-transition: 0.3s ease all;
     }
-    input:focus~label,
-    input.ui-state-filled~label,
-    .ui-inputwrapper-focus~label,
-    .ui-inputwrapper-filled~label {
+    input:focus ~ label,
+    input.ui-state-filled ~ label,
+    .ui-inputwrapper-focus ~ label,
+    .ui-inputwrapper-filled ~ label {
       top: -20px;
       font-size: 12px;
       color: $primaryColor;
     }
-    .input:-webkit-autofill~label {
+    .input:-webkit-autofill ~ label {
       top: -20px;
       font-size: 12px;
       color: $primaryColor;
     }
-    input.ng-dirty.ng-invalid~label {
+    input.ng-dirty.ng-invalid ~ label {
       color: $invalidInputLabelColor;
     }
     .ui-message {
@@ -694,7 +694,7 @@ body {
         border: 0 none;
         margin: 0px;
         color: #e62a10;
-        font-size: .75em;
+        font-size: 0.75em;
       }
     }
   }
@@ -705,7 +705,7 @@ body {
         border: 0 none;
         margin: 0px;
         color: #e62a10;
-        font-size: .75em;
+        font-size: 0.75em;
       }
     }
   }
@@ -726,7 +726,7 @@ body {
       margin: 0;
       color: $textColor;
       @include rippleitem();
-      @include transition(background-color .3s);
+      @include transition(background-color 0.3s);
       @include border-radius(0);
       &.ui-state-highlight {
         background-color: $accentColor;
@@ -861,36 +861,37 @@ body {
     background: #55b0ff;
     outline: none;
   }
-  #tabView-content{
-    .ui-tabview-nav{
+  #tabView-content {
+    .ui-tabview-nav {
       position: absolute;
-      top:-90px;
-      width:100%;
+      top: -90px;
+      width: 100%;
     }
   }
-  .special-button{
+  .special-button {
     text-align: center;
-    .ui-fileupload{
-      .ui-widget-header{
+    .ui-fileupload {
+      .ui-widget-header {
         background: none;
-        >span,button{
+        > span,
+        button {
           background: none;
-          border:1px solid #368ee0;
-          padding:0;
+          border: 1px solid #368ee0;
+          padding: 0;
           cursor: pointer;
           transition: all 0.3s;
-          &:hover{
+          &:hover {
             background: #368ee0;
-            .ui-button-text{
-              color:#fff;
+            .ui-button-text {
+              color: #fff;
             }
           }
-          .ui-button-icon-left{
+          .ui-button-icon-left {
             display: none;
           }
-          .ui-button-text{
-            color:#368ee0;
-            width:100%;
+          .ui-button-text {
+            color: #368ee0;
+            width: 100%;
           }
         }
       }
@@ -981,7 +982,7 @@ body {
     }
   }
   .ui-button,
-  .ui-datepicker-buttonpane>button {
+  .ui-datepicker-buttonpane > button {
     overflow: hidden;
     background-color: $primaryDarkColor;
     color: $primaryTextColor;
@@ -995,8 +996,8 @@ body {
     border: 0 none; // -moz-box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, 0.26), 0 1px 5px 0 rgba(0, 0, 0, 0.16);
     // -webkit-box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, 0.26), 0 1px 5px 0 rgba(0, 0, 0, 0.16);
     // box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, 0.26), 0 1px 5px 0 rgba(0, 0, 0, 0.16);
-    @include transition(background-color .3s); // &:enabled:not(:focus):hover {
-    //     background-color: $primaryDarkColor;   
+    @include transition(background-color 0.3s); // &:enabled:not(:focus):hover {
+    //     background-color: $primaryDarkColor;
     // }
     .ui-clickable {
       height: 100% !important;
@@ -1023,7 +1024,7 @@ body {
         display: none;
       }
       .fa {
-        margin-left: -.5em;
+        margin-left: -0.5em;
         line-height: 17px;
       }
     }
@@ -1045,29 +1046,29 @@ body {
       }
     }
     &.blue-grey-btn {
-      background-color: #607D8B;
+      background-color: #607d8b;
       &:enabled:not(:focus):hover {
-        background-color: #37474F;
+        background-color: #37474f;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#607D8B, 10%);
+        background-color: lighten(#607d8b, 10%);
       }
     }
     &.cyan-btn {
-      background-color: #00BCD4;
+      background-color: #00bcd4;
       &:enabled:not(:focus):hover {
-        background-color: #00838F;
+        background-color: #00838f;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#00BCD4, 10%);
+        background-color: lighten(#00bcd4, 10%);
       }
     }
     &.teal-btn {
       background-color: #009688;
       &:enabled:not(:focus):hover {
-        background-color: #00695C;
+        background-color: #00695c;
       }
       &:focus {
         outline: 0 none;
@@ -1075,80 +1076,80 @@ body {
       }
     }
     &.red-btn {
-      background-color: #F44336;
+      background-color: #f44336;
       &:enabled:not(:focus):hover {
-        background-color: #C62828;
+        background-color: #c62828;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#F44336, 10%);
+        background-color: lighten(#f44336, 10%);
       }
     }
     &.green-btn {
-      background-color: #4CAF50;
+      background-color: #4caf50;
       &:enabled:not(:focus):hover {
-        background-color: #2E7D32;
+        background-color: #2e7d32;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#4CAF50, 10%);
+        background-color: lighten(#4caf50, 10%);
       }
     }
     &.deep-orange-btn {
-      background-color: #FF5722;
+      background-color: #ff5722;
       &:enabled:not(:focus):hover {
-        background-color: #D84315;
+        background-color: #d84315;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#FF5722, 10%);
+        background-color: lighten(#ff5722, 10%);
       }
     }
     &.purple-btn {
-      background-color: #673AB7;
+      background-color: #673ab7;
       &:enabled:not(:focus):hover {
-        background-color: #4527A0;
+        background-color: #4527a0;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#673AB7, 10%);
+        background-color: lighten(#673ab7, 10%);
       }
     }
     &.pink-btn {
-      background-color: #E91E63;
+      background-color: #e91e63;
       &:enabled:not(:focus):hover {
-        background-color: #AD1457;
+        background-color: #ad1457;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#E91E63, 10%);
+        background-color: lighten(#e91e63, 10%);
       }
     }
     &.amber-btn {
-      background-color: #FFC107;
+      background-color: #ffc107;
       color: #212121;
       &:enabled:not(:focus):hover {
-        background-color: #FF8F00;
+        background-color: #ff8f00;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#FFC107, 10%);
+        background-color: lighten(#ffc107, 10%);
       }
     }
     &.orange-btn {
-      background-color: #FF9800;
+      background-color: #ff9800;
       &:enabled:not(:focus):hover {
-        background-color: #EF6C00;
+        background-color: #ef6c00;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#FF9800, 10%);
+        background-color: lighten(#ff9800, 10%);
       }
     }
     &.brown-btn {
       background-color: #795548;
       &:enabled:not(:focus):hover {
-        background-color: #4E342E;
+        background-color: #4e342e;
       }
       &:focus {
         outline: 0 none;
@@ -1156,13 +1157,13 @@ body {
       }
     }
     &.indigo-btn {
-      background-color: #3F51B5;
+      background-color: #3f51b5;
       &:enabled:not(:focus):hover {
         background-color: #283593;
       }
       &:focus {
         outline: 0 none;
-        background-color: lighten(#3F51B5, 10%);
+        background-color: lighten(#3f51b5, 10%);
       }
     }
     &.flat {
@@ -1219,7 +1220,7 @@ body {
       width: 12px;
       height: 12px;
       border-radius: 0 !important;
-      @include transition(background-color .3s);
+      @include transition(background-color 0.3s);
       .ui-chkbox-icon {
         margin-left: -1px;
         margin-top: -1px;
@@ -1235,24 +1236,24 @@ body {
       &.ui-state-focus {
         border-color: $primaryColor;
         @include content-shadow();
-        @include transition(box-shadow .3s, background-color .3s);
+        @include transition(box-shadow 0.3s, background-color 0.3s);
       }
     }
   }
   .ui-radiobutton {
     position: relative;
-    margin: 0 .25em 0 0;
+    margin: 0 0.25em 0 0;
     vertical-align: middle;
     .ui-radiobutton-box {
       border: 1px solid $radioButtonBorderColor;
       width: 12px;
       height: 12px;
-      @include transition(box-shadow .3s);
+      @include transition(box-shadow 0.3s);
       @include border-radius(50%);
       &.ui-state-focus {
         border-color: $primaryColor;
         @include content-shadow();
-        @include transition(box-shadow .3s, background-color .3s);
+        @include transition(box-shadow 0.3s, background-color 0.3s);
       }
       &.ui-state-active {
         border-color: $primaryDarkColor;
@@ -1263,8 +1264,8 @@ body {
         box-sizing: border-box;
         @include border-radius(50%);
         font-size: 1em;
-        transition: -webkit-transform ease .28s;
-        transition: transform ease .28s;
+        transition: -webkit-transform ease 0.28s;
+        transition: transform ease 0.28s;
         -webkit-transform: scale(0);
         transform: scale(0);
       }
@@ -1285,7 +1286,7 @@ body {
     .ui-autocomplete-list {
       padding: 0;
       .ui-autocomplete-list-item {
-        @include transition(background-color .3s);
+        @include transition(background-color 0.3s);
         font-size: $inputOptionFontSize;
         padding: $listItemPadding;
         @include border-radius(0);
@@ -1341,7 +1342,7 @@ body {
         display: inline-block;
         margin: 0 1px;
         vertical-align: middle;
-        >input {
+        > input {
           padding: 0;
           font-size: $fontSize;
           margin: 0;
@@ -1366,7 +1367,7 @@ body {
   .ui-fluid {
     .ui-autocomplete {
       &.ui-autocomplete-dd {
-        >.ui-inputtext {
+        > .ui-inputtext {
           width: 100%;
         }
       }
@@ -1381,7 +1382,7 @@ body {
     //     border: 1px solid #ddefff;
     // }
     @include border-radius(0);
-    @include transition(border-color .3s);
+    @include transition(border-color 0.3s);
     .ui-dropdown-trigger {
       height: 23px;
       width: 24px;
@@ -1402,7 +1403,7 @@ body {
     }
     .ui-dropdown-label {
       &.ui-inputtext {
-        font: $inputFontSize 'Roboto', 'Helvetica Neue', sans-serif;
+        font: $inputFontSize "Roboto", "Helvetica Neue", sans-serif;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -1424,9 +1425,9 @@ body {
     background: #f8f8f8;
     @include border-radius(0);
     .ui-dropdown-items-wrapper {
-      overflow-X: hidden;
-      max-width:260px;
-      width:100%;
+      overflow-x: hidden;
+      max-width: 260px;
+      width: 100%;
     }
     .ui-dropdown-list {
       padding: 0;
@@ -1434,7 +1435,7 @@ body {
       border: 1px solid $contentBorderColor;
       border-radius: 4px;
     }
-    .ui-dropdown-list>li {
+    .ui-dropdown-list > li {
       color: #424242;
       padding: 0;
       width: 100.5%;
@@ -1443,7 +1444,7 @@ body {
         color: #636669;
         background: #e7f1fb;
       }
-      >span {
+      > span {
         height: 100%;
         line-height: 30px;
         display: inline-block;
@@ -1454,10 +1455,10 @@ body {
         overflow: hidden;
       }
     }
-    .ui-dropdown-list>li:first-child {
+    .ui-dropdown-list > li:first-child {
       margin-top: 3px;
     }
-    .ui-dropdown-list>li:last-child {
+    .ui-dropdown-list > li:last-child {
       margin-bottom: 3px;
     }
     .ui-dropdown-item {
@@ -1467,7 +1468,7 @@ body {
       padding: 4.5px 10px;
       background: #f8f8f8;
       color: $textColor;
-      @include transition(background-color .3s);
+      @include transition(background-color 0.3s);
       @include border-radius(0);
       &:hover {
         @include hover-element();
@@ -1510,7 +1511,7 @@ body {
     width: 200px;
     box-sizing: border-box;
     @include border-radius(0);
-    @include transition(border-color .3s);
+    @include transition(border-color 0.3s);
     .ui-multiselect-label-container {
       height: 100%;
       line-height: 25px;
@@ -1549,7 +1550,7 @@ body {
       background: none;
       .ui-chkbox {
         float: none;
-        margin: 0 .5em 0 -.125em;
+        margin: 0 0.5em 0 -0.125em;
         position: static;
         display: none;
         .ui-chkbox-box {
@@ -1565,7 +1566,7 @@ body {
           }
           &.ui-state-focus {
             background-color: $primaryLightColor;
-            @include transition(background-color .3s);
+            @include transition(background-color 0.3s);
           }
         }
       }
@@ -1599,7 +1600,7 @@ body {
       }
       .ui-multiselect-close {
         position: absolute;
-        right: .5em;
+        right: 0.5em;
         top: 6px;
         height: 1.5em;
         width: 1.5em;
@@ -1611,7 +1612,7 @@ body {
         &:hover {
           background-color: #fff;
           @include border-radius(50%);
-          @include transition(background-color .3s);
+          @include transition(background-color 0.3s);
           span {
             color: #368ee0;
           }
@@ -1635,9 +1636,9 @@ body {
   .ui-spinner {
     .ui-spinner-button {
       width: 1em;
-      height: .75em;
+      height: 0.75em;
       padding: 0;
-      margin-right: .25em;
+      margin-right: 0.25em;
       background-color: transparent;
       color: $textColor;
       z-index: auto;
@@ -1650,7 +1651,7 @@ body {
       }
       .fa {
         top: 0px;
-        height: .5em;
+        height: 0.5em;
         color: $textSecondaryColor;
       }
       &:enabled:hover,
@@ -1660,12 +1661,12 @@ body {
     }
     .ui-spinner-up {
       .fa {
-        top: .25em;
+        top: 0.25em;
       }
     }
     .ui-spinner-down {
       .fa {
-        top: .167em;
+        top: 0.167em;
       }
     }
     .ui-spinner-input {
@@ -1676,7 +1677,7 @@ body {
     .ui-spinner {
       .ui-spinner-button {
         width: 1em;
-        height: .75em;
+        height: 0.75em;
         .fa {
           left: auto;
         }
@@ -1695,13 +1696,16 @@ body {
       top: 1px;
       background-color: #ffffff;
       @include border-radius(50%);
-      @include transition(background-color .3s);
+      @include transition(background-color 0.3s);
       width: 16px !important;
       height: 16px !important;
       border-radius: 100%;
-      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
-      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px,
+        rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px,
+        rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px,
+        rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
     }
     .ui-inputswitch-on {
       visibility: hidden;
@@ -1729,8 +1733,8 @@ body {
       @include border-radius(50%);
       width: 1.25em;
       height: 1.25em;
-      transform: scale(.7);
-      @include transition(all .4s cubic-bezier(.25, .8, .25, 1));
+      transform: scale(0.7);
+      @include transition(all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1));
       &.ui-state-focus {
         transform: scale(1);
       }
@@ -1743,7 +1747,7 @@ body {
       border: 0 none;
       background-color: $inputBorderColor;
       .ui-slider-handle {
-        top: -.55em;
+        top: -0.55em;
       }
     }
     &.ui-slider-vertical {
@@ -1751,7 +1755,7 @@ body {
       border: 0 none;
       background-color: $inputBorderColor;
       .ui-slider-handle {
-        left: -.55em;
+        left: -0.55em;
       }
     }
     .ui-slider-range {
@@ -1810,12 +1814,12 @@ body {
       @include border-radius-bottom(0);
       .ui-datepicker-prev {
         cursor: pointer;
-        top: .4em;
-        left: .2em;
+        top: 0.4em;
+        left: 0.2em;
         margin-left: 0 !important;
         @include border-radius(50%);
-        @include material-icon('keyboard_arrow_left');
-        @include transition(background-color .3s);
+        @include material-icon("keyboard_arrow_left");
+        @include transition(background-color 0.3s);
         color: #ffffff;
         .fa {
           display: none;
@@ -1826,11 +1830,11 @@ body {
       }
       .ui-datepicker-next {
         cursor: pointer;
-        top: .4em;
-        right: .2em;
-        @include material-icon('keyboard_arrow_right');
+        top: 0.4em;
+        right: 0.2em;
+        @include material-icon("keyboard_arrow_right");
         @include border-radius(50%);
-        @include transition(background-color .3s);
+        @include transition(background-color 0.3s);
         color: #ffffff;
         .fa {
           display: none;
@@ -1868,7 +1872,7 @@ body {
         }
       }
       td {
-        padding: .25em .125em;
+        padding: 0.25em 0.125em;
         box-sizing: border-box;
         &.ui-datepicker-today {
           a,
@@ -1891,8 +1895,8 @@ body {
           text-align: center;
           color: $textColor;
           display: inline-block;
-          height: 2.250em;
-          width: 2.250em;
+          height: 2.25em;
+          width: 2.25em;
           margin-left: 3.5px;
           line-height: 2.3em;
           @include border-radius(50%);
@@ -1909,31 +1913,31 @@ body {
     }
     .ui-timepicker {
       @include border-radius(0);
-      >div {
+      > div {
         a {
           height: 1.5em;
-          >span {
+          > span {
             display: inline-block;
-            margin-bottom: .25em;
+            margin-bottom: 0.25em;
           }
           .fa {
             &.fa-angle-up {
               @include rotate(0);
-              @include material-icon('keyboard_arrow_up');
+              @include material-icon("keyboard_arrow_up");
             }
             &.fa-angle-down {
               @include rotate(0);
-              @include material-icon('keyboard_arrow_down');
+              @include material-icon("keyboard_arrow_down");
             }
           }
         }
       }
     }
     .ui-datepicker-buttonbar {
-      >div {
+      > div {
         width: 60%;
         margin: auto;
-        >div {
+        > div {
           width: 50%;
           display: inline-block;
           .ui-button-secondary {
@@ -1966,27 +1970,27 @@ body {
   .ui-rating {
     min-height: 1.5em;
     .fa-ban {
-      @include material-icon('cancel');
+      @include material-icon("cancel");
       color: $textSecondaryColor;
     }
     .fa-star {
-      @include material-icon('star');
+      @include material-icon("star");
       color: $textSecondaryColor;
     }
     .fa-star-o {
-      @include material-icon('star_border');
+      @include material-icon("star_border");
       color: $textSecondaryColor;
     }
   }
   .ui-chips {
-    >ul.ui-inputtext {
+    > ul.ui-inputtext {
       padding: 2px 2px 1px 2px;
       &.ui-state-focus {
         padding-bottom: 0;
       }
       .ui-chips-input-token {
         padding-bottom: 2px;
-        >input {
+        > input {
           padding: 0;
           font-size: $fontSize;
           margin: 0;
@@ -2026,7 +2030,7 @@ body {
         top: 14px;
       }
       .fa-arrowreturnthick-1-n {
-        @include icon_override('file_upload');
+        @include icon_override("file_upload");
       }
       .ui-button {
         background-color: $accentColor;
@@ -2055,16 +2059,16 @@ body {
   }
   /* Validation */
   .ui-inputtext.ng-dirty.ng-invalid,
-  p-dropdown.ng-dirty.ng-invalid>.ui-dropdown,
-  p-autocomplete.ng-dirty.ng-invalid>.ui-autocomplete>.ui-inputtext,
-  p-calendar.ng-dirty.ng-invalid>.ui-inputtext,
-  p-inputmask.ng-dirty.ng-invalid>.ui-inputtext,
+  p-dropdown.ng-dirty.ng-invalid > .ui-dropdown,
+  p-autocomplete.ng-dirty.ng-invalid > .ui-autocomplete > .ui-inputtext,
+  p-calendar.ng-dirty.ng-invalid > .ui-inputtext,
+  p-inputmask.ng-dirty.ng-invalid > .ui-inputtext,
   p-checkbox.ng-dirty.ng-invalid .ui-chkbox-box,
   p-radiobutton.ng-dirty.ng-invalid .ui-radiobutton-box,
   p-inputswitch.ng-dirty.ng-invalid .ui-inputswitch,
   p-listbox.ng-dirty.ng-invalid .ui-inputtext,
-  p-multiselect.ng-dirty.ng-invalid>.ui-multiselect,
-  p-spinner.ng-dirty.ng-invalid>.ui-inputtext,
+  p-multiselect.ng-dirty.ng-invalid > .ui-multiselect,
+  p-spinner.ng-dirty.ng-invalid > .ui-inputtext,
   p-selectbutton.ng-dirty.ng-invalid .ui-button,
   p-togglebutton.ng-dirty.ng-invalid .ui-button {
     border-bottom-color: $invalidInputBorderColor;
@@ -2074,7 +2078,7 @@ body {
 @media (max-width: 640px) {
   body {
     .ui-buttonset {
-      >.ui-button {
+      > .ui-button {
         display: block;
         @include border-radius(0);
         &:first-child {
@@ -2086,13 +2090,198 @@ body {
       }
     }
     .ui-splitbutton {
-      >.ui-button {
+      > .ui-button {
         display: inline-block;
         &:first-child {
           @include border-radius-top(0);
         }
         &:last-child {
           @include border-radius-bottom(0);
+        }
+      }
+    }
+  }
+}
+body {
+  button {
+    @include custom_button();
+
+    &.weaken-query {
+      @include custom_button();
+    }
+
+    &.weaken-reset {
+      @include custom_button();
+    }
+  }
+
+  .ui-button {
+    @include custom_button();
+  }
+
+  input.ui-inputtext {
+    height: 28px !important;
+    line-height: 28px !important;
+    &:disabled {
+      background-color: $disabledBgColor;
+      color: $disabledColor;
+    }
+    &:read-only {
+      background-color: $readOnlyBgColor !important;
+      color: $readOnlyColor;
+    }
+  }
+
+  .ui-dropdown {
+    height: 28px !important;
+    label.ui-inputtext {
+      height: 28px !important;
+      line-height: 28px !important;
+    }
+    .ui-dropdown-trigger {
+      height: 28px;
+    }
+  }
+
+  .ui-inputgroup {
+    .ui-button {
+      &:not(.ui-datepicker-trigger) {
+        background-color: $tjPrimaryColor;
+        height: 28px !important;
+        border-radius: 0;
+        padding: 0 10px;
+        line-height: 28px;
+
+        .fa {
+          color: #fff;
+          font-size: 18px;
+          width: 18px;
+          border-radius: 0;
+          line-height: 28px;
+        }
+      }
+
+      &.ui-datepicker-trigger {
+        border: none;
+      }
+
+      .ui-button-text {
+        color: #fff;
+        line-height: 28px !important;
+      }
+    }
+  }
+
+  .ui-calendar {
+    input.ui-inputtext {
+      background-color: transparent !important;
+    }
+    .ui-button {
+      &.ui-datepicker-trigger {
+        border: none;
+        height: 28px;
+        bottom: 0;
+        span.fa-calendar {
+          border-radius: 0;
+          line-height: 24px;
+          top: 0;
+          margin-top: 0;
+        }
+
+        &:hover {
+          span.fa-calendar {
+            color: #757575;
+          }
+        }
+      }
+    }
+  }
+
+  .ui-fileupload {
+    .ui-fileupload-buttonbar {
+      .ui-button {
+        @include custom_button();
+
+        &:enabled:hover {
+          color: $buttonHoverColor;
+          background-color: $buttonHoverBgColor;
+          .fa {
+            color: $buttonHoverColor;
+          }
+        }
+      }
+    }
+
+    .ui-fileupload-content {
+      .ui-fileupload-row {
+        .ui-button {
+          @include custom_button();
+        }
+      }
+    }
+  }
+
+  .ui-autocomplete {
+    .ui-autocomplete-dropdown {
+      &.ui-button.ui-button-icon-only {
+        color: #333;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+
+  .ui-chkbox {
+    width: 17px;
+    height: 17px;
+    .ui-chkbox-box {
+      width: 17px;
+      height: 17px;
+      &.ui-state-active {
+        border-color: $tjPrimaryColor;
+        background-color: $tjPrimaryColor;
+        .fa {
+          font-size: 13px;
+          border-radius: 0;
+          width: 100%;
+          height: 16px;
+          margin-left: 0;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .ui-radiobutton {
+    .ui-radiobutton-box {
+      width: 17px;
+      height: 17px;
+
+      &.ui-state-active {
+        border-color: $tjPrimaryColor;
+        background-color: transparent;
+      }
+
+      .fa-circle {
+        background-color: $tjPrimaryColor;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .ui-multiselect-panel.ui-widget {
+  }
+
+  .dialog-containe {
+    > div {
+      > .btn-row {
+        .edit-btn {
+          button {
+            margin: 0 10px;
+            @include custom_button();
+          }
         }
       }
     }

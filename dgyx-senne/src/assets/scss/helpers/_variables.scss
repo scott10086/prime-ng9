@@ -1,59 +1,139 @@
-
 /* Common */
-$fontSize:12px;
-$fontFamily:'Roboto','Helvetica Neue',sans-serif;
-$lineHeight:1.5em;
-$textColor:#424242;
-$textSecondaryColor:#757575;
-$borderRadius:3px;
-$dividerColor:#eaeaea;
-$dividerLightColor:#f8f8f8;
-$iconWidth:20px;
-$iconHeight:20px;
-$iconFontSize:20px;
-$grayBgColor:#757575;
-$hoverBgColor:#e8e8e8;
+$fontSize: 12px;
+$fontFamily: "Roboto", "Helvetica Neue", sans-serif;
+$lineHeight: 1.5em;
+$textColor: #424242;
+$textSecondaryColor: #757575;
+$borderRadius: 3px;
+$dividerColor: #eaeaea;
+$dividerLightColor: #f8f8f8;
+$iconWidth: 20px;
+$iconHeight: 20px;
+$iconFontSize: 20px;
+$grayBgColor: #757575;
+$hoverBgColor: #e8e8e8;
 // $hoverTextColor:#000000;
 // $hoverTextColor:#fff;
-$hoverTextColor:#fff;
+$hoverTextColor: #fff;
 
 /* Layout */
-$bodyBgColor:#fcfbfb;
-$menuItemHoverBgColor:#e8e8e8;
-$menuitemColor:#757575;
-$footerBgColor:#ffffff;
+$bodyBgColor: #fcfbfb;
+$menuItemHoverBgColor: #e8e8e8;
+$menuitemColor: #757575;
+$footerBgColor: #ffffff;
 
 /* Topbar */
-$topbarSubmenuBgColor:#f7f7f7;
-$topbarSubmenuItemHoverBgColor:#e3e3e3;
+$topbarSubmenuBgColor: #f7f7f7;
+$topbarSubmenuItemHoverBgColor: #e3e3e3;
 
 /******************************/
 /*           THEME            */
 /******************************/
-$headerPadding:.625em 1em;
-$headerFontSize:1em;
+$headerPadding: 0.625em 1em;
+$headerFontSize: 1em;
 
-$contentPadding:.625em 1em;
-$contentBorderColor:#d8d8d8;
-$contentBgColor:#ffffff;
+$contentPadding: 0.625em 1em;
+$contentBorderColor: #d8d8d8;
+$contentBgColor: #ffffff;
 
 // $inputBorderColor:#bdbdbd;
-$inputBorderColor:#edecf1;
-$inputFontSize:1em;
-$inputHeaderFontSize:1em;
-$inputOptionFontSize:1em;
-$inputHeaderPadding:.625em 1em;
-$invalidInputLabelColor:#e62a10;
-$invalidInputBorderColor:#e62a10;
+$inputBorderColor: #edecf1;
+$inputFontSize: 1em;
+$inputHeaderFontSize: 1em;
+$inputOptionFontSize: 1em;
+$inputHeaderPadding: 0.625em 1em;
+$invalidInputLabelColor: #e62a10;
+$invalidInputBorderColor: #e62a10;
 
-$buttonFontSize:14px;
+$buttonFontSize: 14px;
 
-$listItemPadding:.625em 1em;
+$listItemPadding: 0.625em 1em;
 
-$radioButtonBorderColor:#757575;
-$checkboxBorderColor:#757575;
+$radioButtonBorderColor: #757575;
+$checkboxBorderColor: #757575;
 
 // $dataTableBorderColor:#cacaca;
-$dataTableBorderColor:#ccc;
+$dataTableBorderColor: #ccc;
 // $dataTableRowBgColorEven:#f4f4f4;
-$dataTableRowBgColorEven:#f8f8f8;
+$dataTableRowBgColorEven: #f8f8f8;
+
+// 主品牌色
+$tjPrimaryColor: #005098;
+// 表单禁用背景色
+$disabledBgColor: #b3b3b3;
+// 表单禁用字体颜色
+$disabledColor: #333;
+// 表单只读背景色
+$readOnlyBgColor: #e4e4e4;
+// 表单只读字体颜色
+$readOnlyColor: #333;
+
+// 登录页面背景图
+$loginBgImg: "/assets/attachments/images/img/bg.png";
+// 登录页面logo图片
+$loginLogoImg: "/assets/attachments/images/img/logo_denglu.png";
+// 登录页面底部版权所有背景色
+$loginFootBgColor: rgba(0, 0, 0, 0.4);
+
+// 顶部导航背景色
+$topMenuBgColor: #62b0e3;
+// 顶部导航鼠标移动上去后得背景色
+$topMenuItemHoverBgColor: $tjPrimaryColor !important;
+//顶部用户显示信息背景色
+$topBarUserApplyBgColor: #62b0e3;
+
+// 侧边导航背景色
+$sideMenuBgColor: $tjPrimaryColor;
+// 侧边导航鼠标移动上去后的背景色
+$sideMenuItemHoverBgColor: #62b0e3;
+// 侧边导航鼠标移动上去后 前面竖条颜色
+$sideMenuItemIndexBgColor: #fcb814;
+// 侧边快捷导航顶部按钮 鼠标移上时候背景色
+$sideMenuBtnHoverColor: #187ad2;
+
+// 按钮样式
+$buttonBgColor: #fff;
+$buttonColor: $tjPrimaryColor;
+$buttonBorderColor: $tjPrimaryColor;
+$buttonHoverBgColor: $tjPrimaryColor;
+$buttonHoverColor: #fff;
+$buttonDisabledBgColor: $disabledBgColor;
+$buttonDisabledColor: $disabledColor;
+
+// 字体
+$fontFamily: "苹方", "San Francisco";
+
+// 表格head背景色
+$tableHeadeBgColor: #b6d6f1;
+$tableHoverRowBgColor: #e7f1fb;
+$tableHeadeColor: #333;
+$tableHeadeFontSize: 14px;
+$tableHeadeFontWeight: bold;
+
+// h1-h6字体大小
+$h1FontSize: 24px;
+$h2FontSize: 22px;
+$h3FontSize: 18px;
+$h4FontSize: 16px;
+$h5FontSize: 14px;
+$h6FontSize: 12px;
+
+$primaryLightEndColor: #3b8ec8;
+$primaryTextHoverColor: #ffffff;
+$activeMenuItemTextColor: #00355e;
+$darkActiveMenuItemTextColor: #00355e;
+$darkMenuItemTextColor: #dee0e3;
+$darkMenuItemInactiveTextColor: #757575;
+$darkMenuItemHoverBgColor: #545454;
+$darkSidemenuBgColor: #343434;
+$darkMenuBgColor: #424242;
+$primaryColor: #368ee0;
+$primaryDarkColor: #55b0ff;
+$primaryBackColor: #ffffff;
+$hoverTextColor: #fff;
+$primaryLightColor: #55b0ff;
+$primaryTextColor: #ffffff;
+$accentColor: #368ee0;
+$accentDarkColor: #ffa000;
+$accentLightColor: #ffecb3;
+$accentTextColor: #cccccc;

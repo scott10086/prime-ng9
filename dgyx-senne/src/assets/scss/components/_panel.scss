@@ -513,3 +513,139 @@ body {
     }
   }
 }
+body {
+  .ui-panel {
+    border: solid 2px #dcdcdc;
+    .ui-panel-titlebar {
+      border-bottom: solid 2px #dcdcdc;
+      position: relative;
+      .ui-panel-title {
+        position: relative;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 5px;
+          height: 60%;
+          background-color: $tjPrimaryColor;
+          position: absolute;
+          left: 1px;
+          top: 8px;
+        }
+      }
+
+      .ui-panel-titlebar-icon {
+        background: $tjPrimaryColor;
+        right: 5px;
+        &:hover {
+          background-color: $accentColor;
+          .fa-minus,
+          .fa-plus {
+            color: $accentTextColor;
+          }
+        }
+      }
+
+      .ui-panel-operations {
+        margin: 0;
+        height: 100%;
+        position: relative;
+        padding: 0 15px;
+        color: #b3b3b3;
+        cursor: pointer;
+        > span {
+          padding-top: 11px;
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+        }
+        > .ui-button {
+          margin: 5px 32px 0 11px;
+          @include custom_button();
+        }
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 2px;
+          height: 60%;
+          background-color: #b3b3b3;
+          position: absolute;
+          left: 1px;
+          top: 9px;
+        }
+      }
+    }
+  }
+
+  .ui-tabview {
+    &.ui-tabview-top {
+      > .ui-tabview-nav {
+        &.ui-widget-header {
+          margin: 0px;
+          border: none;
+          border-radius: 0px;
+          background-color: #e2dfdf;
+          li {
+            margin-left: 0px;
+            border: none;
+            border-radius: 0px;
+            background-color: #e2dfdf;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 100%;
+              width: 0;
+              height: 100%;
+              border-bottom: 2px solid $tjPrimaryColor;
+              transition: 0.2s all linear;
+            }
+
+            &:hover::before {
+              left: 0;
+              width: 100%;
+            }
+
+            &:hover ~ &::before {
+              left: 0;
+            }
+            &::after {
+              content: "";
+              width: 1px;
+              height: 14px;
+              position: absolute;
+              top: 9px;
+              left: 0;
+              background: #d3d3d3;
+            }
+            &:hover::after {
+              width: 0;
+            }
+          }
+
+          .ui-tabview-selected.ui-state-active ~ li::before {
+            left: 0;
+          }
+          .ui-tabview-selected.ui-state-active::before {
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+
+          .ui-tabview-selected.ui-state-active::after {
+            width: 0;
+          }
+          li:nth-child(1)::after {
+            width: 0;
+          }
+        }
+
+        li.ui-tabview-selected {
+          background-color: #f7f7f7;
+          .ui-tabview-title {
+            color: $tjPrimaryColor;
+          }
+        }
+      }
+    }
+  }
+}
