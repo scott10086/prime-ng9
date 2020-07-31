@@ -1,10 +1,9 @@
 {
-  "name": "my-a",
+  "name": "scott",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "pck:gateway": "ng-packagr -p ng-package-gateway.json",
-    "pck:business": "ng-packagr -p ng-package-business.json",
+    "pck": "ng-packagr -p ng-package.json",
     "start": "node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng serve --port 8888",
     "start:prod": "node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng serve --prod --vendor-chunk=true",
     "build": "node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng build",
@@ -13,8 +12,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
-  "dependencies": {
+  "private": false,
+  "peerDependencies": {
     "@angular/animations": "~9.0.2",
     "@angular/common": "~9.0.2",
     "@angular/compiler": "~9.0.2",
@@ -36,6 +35,7 @@
     "web-animations-js": "^2.3.2",
     "zone.js": "~0.10.2"
   },
+  "dependencies": {},
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.3",
     "@angular/cli": "~9.0.2",
@@ -56,6 +56,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.6.4"
+    "typescript": "~3.6.4",
+    "ng-packagr": "9.0.0"
   }
 }
