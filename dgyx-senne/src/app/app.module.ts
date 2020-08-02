@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
 import { LoginModule } from './login/login.module';
-import { WelcomeModule } from './pages/welcome/welcome.module';
+import { GeneralModule } from './pages/general/general.module';
 
 @NgModule({
   declarations: [
@@ -13,11 +14,12 @@ import { WelcomeModule } from './pages/welcome/welcome.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     RouterModule,
     AppRoutingModule,
     LoginModule,
-    WelcomeModule,
+    GeneralModule,
     RouterModule.forRoot([]),
   ],
   providers: [],

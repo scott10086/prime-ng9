@@ -1,11 +1,9 @@
 // 引入primeNg的所有模块
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccordionModule, AutoCompleteModule, BreadcrumbModule, ButtonModule, CalendarModule, CarouselModule, ChartModule, CheckboxModule, ChipsModule, CodeHighlighterModule, ConfirmDialogModule, ContextMenuModule, DialogModule, DragDropModule, DropdownModule, EditorModule, FieldsetModule, FileUploadModule, GalleriaModule, GMapModule, InputMaskModule, InputSwitchModule, InputTextareaModule, InputTextModule, LightboxModule, ListboxModule, MegaMenuModule, MenubarModule, MenuModule, MessagesModule, MultiSelectModule, OrderListModule, OverlayPanelModule, PaginatorModule, PanelMenuModule, PanelModule, PasswordModule, PickListModule, ProgressBarModule, RadioButtonModule, RatingModule, SelectButtonModule, SharedModule, SlideMenuModule, SliderModule, SpinnerModule, SplitButtonModule, StepsModule, TabMenuModule, TabViewModule, TerminalModule, TieredMenuModule, ToggleButtonModule, ToolbarModule, TooltipModule, TreeModule, TreeTableModule } from 'primeng';
 
 @NgModule({
   exports: [
-    BrowserAnimationsModule,
     PanelModule,
     InputTextModule,
     PasswordModule,

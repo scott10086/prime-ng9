@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { EasyLoginComponent } from './login/easy/easy-login.component';
 import { LoginCanActivat } from './login/loginCanActivate';
-import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { GeneralComponent } from './pages/general/general.component';
 
 @NgModule({
   imports: [
@@ -11,12 +11,12 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
       { path: 'login', component: EasyLoginComponent },
       {
         path: 'pages',
-        component: WelcomeComponent,
+        component: GeneralComponent,
         canActivate: [LoginCanActivat],
-        // children: [
-        //   { path: '', redirectTo: 'home', pathMatch: 'full' },
-        //   { path: 'home', component: UisftechGatewayHome },
-        // ]
+        children: [
+          { path: '', redirectTo: '1', pathMatch: 'full' },
+          { path: '1', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomeModule) },
+        ]
       },
     ]),
   ],

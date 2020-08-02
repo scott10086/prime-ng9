@@ -1,21 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { PrimeNgModule } from '../../framework/primeng.module';
-import { WelcomeComponent } from './welcome.component';
+import { RouterModule } from '@angular/router';
+import { WelcomeComponent1 } from './welcome.component1';
+import { WelcomeRoutingModule } from './welcome.routing';
 
 @NgModule({
   imports: [
     CommonModule,
-    PrimeNgModule
+    RouterModule,
+    WelcomeRoutingModule,
+    RouterModule.forChild([]),
   ],
   declarations: [
-    WelcomeComponent,
+    WelcomeComponent1,
   ],
   exports: [
-    WelcomeComponent,
-  ],
-  providers: [
-
+    WelcomeComponent1,
   ]
 })
 export class WelcomeModule { }

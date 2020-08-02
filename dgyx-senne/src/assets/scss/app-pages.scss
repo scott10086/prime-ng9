@@ -1,22 +1,21 @@
 /* ==================================
  * Pages 页面级别布局样式
  * ================================== */
-@import "pages/_home.scss";
-@import "pages/_login.scss";
-
-@import "pages/_mixins";
-@import "pages/_fonts";
-@import "pages/_utils";
-@import "pages/_dashboard";
+@import "pages/_home";
 @import "pages/_login";
-@import "pages/_exception";
-@import "pages/_landing";
-@import "pages/_main";
-@import "pages/_topbar";
-@import "pages/_sidebar";
-@import "pages/_content";
-@import "pages/_footer";
-@import "pages/_rtl";
-@import "pages/_media_queries";
-@import "pages/_menu_demo";
-@import "pages/_splash";
+
+// @import "pages/_mixins";
+// @import "pages/_fonts";
+// @import "pages/_utils";
+// @import "pages/_dashboard";
+// @import "pages/_exception";
+// @import "pages/_landing";
+// @import "pages/_main";
+// @import "pages/_topbar";
+// @import "pages/_sidebar";
+// @import "pages/_content";
+// @import "pages/_footer";
+// @import "pages/_rtl";
+// @import "pages/_media_queries";
+// @import "pages/_menu_demo";
+// @import "pages/_splash";

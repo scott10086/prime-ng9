@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html'
+  selector: 'app-element',
+  templateUrl: './element.component.html'
 })
 
-export class WelcomeComponent {
+export class ElementComponent {
 
   constructor(
     private router: Router
