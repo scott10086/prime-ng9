@@ -3,21 +3,15 @@
   <div class="btn-row" style="display: inline-block;position: fixed;right: 0;top: 0;padding: 20px;">
     <button (click)="loginOut()">登出</button>
   </div>
-  <div class="layout-sidebar">侧边</div>
+  <div class="layout-sidebar" style="background-color: rgb(127, 182, 182);">侧边</div>
   <div class="layout-main" style="background-color: rgb(98, 168, 168);">
     <div class="layout-main-content">
       <div class="ui-g-1 ui-md-11 ui-g-nopad layout-wrapper" style="width: 100%;padding: 0px;margin: 0px;">
         <div class="ui-g-12 nav-bar" id="topbar-menu-div" style="background-color: rgb(143, 224, 224);">
           <div class="nav-move">
             <ul class="ui-menu-list">
-              <li style="display: inline-block;border: 1px solid yellow;margin-left: 3px;"> <a [routerLink]="['/pages/1/welcome1']">欢迎页</a>
+              <li style="display: inline-block;border: 1px solid yellow;margin-left: 3px;" *ngFor="let item of menuList"> <a [routerLink]="[item.routerLink]">{{item.label}}</a>
               </li>
-              <li style="display: inline-block;border: 1px solid yellow;margin-left: 3px;"> <a [routerLink]="['/pages/1/layout']">布局页</a>
-              </li>
-              <li style="display: inline-block;border: 1px solid yellow;margin-left: 3px;"> <a [routerLink]="['/pages/1/element']">元素页</a>
-              </li>
-              <li></li>
-              <li></li>
             </ul>
           </div>
         </div>

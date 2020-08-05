@@ -4,31 +4,23 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-general',
   templateUrl: './general.component.html',
+  styleUrls: ['./general.component.scss']
 })
 
 export class GeneralComponent {
 
   menuList = [
     {
-      'label': '营销计划',
-      'items': [
-        {
-          'label': '我的营销任务',
-          'routerLink': '/pages/customer-official/marketing-plan/my-marketing-plan-list'
-        },
-        {
-          'label': '营销计划列表',
-          'routerLink': '/pages/customer-official/marketing-plan/marketing-plan-list'
-        },
-        {
-          'label': '营销计划分解列表',
-          'routerLink': '/pages/customer-official/marketing-plan/marketing-plan-split-list'
-        },
-        {
-          'label': '营销计划编辑',
-          'routerLink': '/pages/customer-official/marketing-plan/marketing-plan-tab'
-        }
-      ]
+      'label': '欢迎页',
+      'routerLink': '/pages/1/welcome'
+    },
+    {
+      'label': '布局页',
+      'routerLink': '/pages/1/layout'
+    },
+    {
+      'label': '元素页',
+      'routerLink': '/pages/1/element'
     }
   ];
 
