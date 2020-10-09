@@ -1,9 +1,10 @@
 .login-body {
-  background-color: #f5f5f5;
+  // background-color: #f5f5f5;
   padding-top: 200px;
   height: auto;
-  background: url("/assets/attachments/images/images/login/login-image.png") no-repeat;
+  // background: url("/assets/attachments/images/images/login/login-image.png") no-repeat;
   background-position: 0 -100px;
+  background-image: linear-gradient(to bottom right, red, yellow);
 
   .login-panel {
     background-color: #ffffff;
@@ -80,7 +81,8 @@
   }
 
   .main-content {
-    background-image: url($loginBgImg);
+    // background-image: url($loginBgImg);
+    background-image: linear-gradient(to bottom right, red, yellow);
     width: 100%;
     height: 70%;
     background-size: cover;
@@ -92,7 +94,7 @@
     height: 340px;
     position: absolute;
     top: 50%;
-    right: 15%;
+    right: calc(50% - 184px);
     transform: translateY(-50%);
     background: #fff;
     border-radius: 6px;
@@ -203,8 +205,9 @@
     }
 
     .btn-row {
-      margin-top: 36px;
+      margin-top: 66px;
       height: 48px;
+      text-align: center;
 
       button {
         &:hover {
@@ -212,7 +215,7 @@
         }
 
         cursor: pointer;
-        width: 100%;
+        width: unset;
         height: 36px;
         text-align: center;
         line-height: 36px;

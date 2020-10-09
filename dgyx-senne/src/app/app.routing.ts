@@ -14,8 +14,8 @@ import { GeneralComponent } from './pages/general/general.component';
         component: GeneralComponent,
         canActivate: [LoginCanActivat],
         children: [
-          { path: '', redirectTo: '1', pathMatch: 'full' },
-          { path: '1', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
+          { path: '', redirectTo: 'basic', pathMatch: 'full' },
+          { path: 'basic', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
         ]
       },
     ]),

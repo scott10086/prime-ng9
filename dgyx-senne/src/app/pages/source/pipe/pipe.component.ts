@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MENU_LIST } from './menu-config';
 
 @Component({
-  selector: 'app-general',
-  templateUrl: './general.component.html',
-  styleUrls: ['./general.component.scss']
+  selector: 'app-pipe',
+  templateUrl: './pipe.component.html'
 })
 
-export class GeneralComponent {
-
-  menuList = MENU_LIST;
+export class PipeComponent {
 
   constructor(
     private router: Router

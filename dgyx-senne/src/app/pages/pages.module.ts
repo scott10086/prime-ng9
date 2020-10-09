@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { PagesRoutingModule } from './pages.routing';
-import { WelcomeComponent } from './source/welcome.component';
+import { WelcomeComponent } from './welcome.component';
 
 @NgModule({
   imports: [

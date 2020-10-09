@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 
 export class ElementComponent {
 
+  loadingShow: boolean = false;
+
   constructor(
     private router: Router
   ) { }
@@ -15,5 +17,8 @@ export class ElementComponent {
   loginOut() {
     sessionStorage.removeItem('login');
     this.router.navigate(['/login']);
+  }
+  loading() {
+    this.loadingShow = true;
   }
 }
