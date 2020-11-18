@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { EasyLoginComponent } from './login/easy/easy-login.component';
+import { GeneralComponent } from './general/general.component';
+import { LoginLayoutComponent } from './login/layout/login-layout.component';
 import { LoginCanActivat } from './login/loginCanActivate';
-import { GeneralComponent } from './pages/general/general.component';
 
 @NgModule({
   imports: [
     RouterModule.forChild([
       { path: '', redirectTo: 'pages', pathMatch: 'full' },
-      { path: 'login', component: EasyLoginComponent },
+      { path: 'login', component: LoginLayoutComponent },
       {
         path: 'pages',
         component: GeneralComponent,

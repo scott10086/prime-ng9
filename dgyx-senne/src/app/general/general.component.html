@@ -9,10 +9,11 @@
       <div class="ui-g-1 ui-md-11 ui-g-nopad layout-wrapper" style="width: 100%;padding: 0px;margin: 0px;">
         <div class="ui-g-12 nav-bar" id="topbar-menu-div" style="background-color: rgb(143, 224, 224);">
           <div class="nav-move">
-            <ul class="ui-menu-list">
-              <li style="display: inline-block;border: 1px solid yellow;margin-left: 3px;" *ngFor="let item of menuList"> <a [routerLink]="[item.routerLink]">{{item.label}}</a>
-              </li>
-            </ul>
+            <p-menubar [model]="items" (toggle)="toggle($event)" [expanded]="true">
+              <ng-template pTemplate="date" let-item="rowData">
+                <a [routerLink]="[item.routerLink]">{{item.label}}</a>
+              </ng-template>
+            </p-menubar>
           </div>
         </div>
         <div class="ui-g-12">

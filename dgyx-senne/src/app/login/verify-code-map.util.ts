@@ -1,48 +1,4 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-
-@Component({
-  selector: 'app-easy-login',
-  templateUrl: './easy-login.component.html',
-})
-
-export class EasyLoginComponent {
-
-  verifySuccess = false;
-  verifyCode = '45yu';
-  verifyCodeImgData = '';
-  userInfo = {
-    userLoginId: '',
-    password: '',
-    logintype: 'PWD',
-    logintypedesc: '密码验证',
-    verifyCode: '45y'
-  };
-  errorMsgs: string[] = [];
-  successMsg: string[] = [];
-
-  constructor(
-    private router: Router
-  ) {
-    this.verifyCodeImgData = this.initVerifyCode('45yu');
-  }
-
-
-  login() {
-    sessionStorage.setItem('login', 'true');
-    this.router.navigate(['/pages']);
-  }
-
-  queryVerifyCode() { }
-  verifyCodeKeyup() {
-    this.verifySuccess = (this.verifyCode && this.verifyCode === this.userInfo.verifyCode);
-
-    if (!this.verifySuccess && this.userInfo.verifyCode.length >= 4) {
-      this.queryVerifyCode();
-      this.userInfo.verifyCode = '';
-    }
-  }
-  pressEnter(e) { }
+export class VerifyCodeMapUtil {
 
   initVerifyCode(verifyCode: string): string {
     const canvas = document.createElement('canvas');
@@ -76,7 +32,6 @@ export class EasyLoginComponent {
     return Min + Math.round(Rand * Range);
   }
 
-
   private drawline(canvas, context) {
     context.moveTo(Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height));
     context.lineTo(10, Math.floor(Math.random() * canvas.height));
@@ -95,4 +50,5 @@ export class EasyLoginComponent {
     context.stroke();
 
   }
+
 }

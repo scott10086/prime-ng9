@@ -5,8 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
+import { GeneralModule } from './general/general.module';
 import { LoginModule } from './login/login.module';
-import { GeneralModule } from './pages/general/general.module';
 
 @NgModule({
   declarations: [

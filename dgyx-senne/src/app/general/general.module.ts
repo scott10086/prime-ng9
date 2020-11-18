@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ConfirmationService } from 'primeng';
-import { PrimeNgModule } from '../../framework/primeng.module';
+import { PrimeNgModule } from '../framework/primeng.module';
 import { GeneralComponent } from './general.component';
 
 @NgModule({

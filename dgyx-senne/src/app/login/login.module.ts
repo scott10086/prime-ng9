@@ -1,21 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { PrimeNgModule } from '../framework/primeng.module';
-import { EasyLoginComponent } from './easy/easy-login.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
+import { LoginLayoutComponent } from './layout/login-layout.component';
 import { LoginCanActivat } from './loginCanActivate';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule,
-    PrimeNgModule
+    RouterModule
   ],
   declarations: [
-    EasyLoginComponent,
-  ],
-  exports: [
-    EasyLoginComponent,
+    LoginLayoutComponent,
+    LoginFormComponent,
   ],
   providers: [
     LoginCanActivat,
