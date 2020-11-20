@@ -1,4 +1,5 @@
-<div class="layout-wrapper" [ngClass]="{'layout-wrapper-menu-active':sidebarActive, 'layout-wrapper-skin-active':skinListActive}" style="background-color: rgb(69, 138, 138);">
+<div class="layout-wrapper" [ngClass]="{'layout-wrapper-menu-active':sidebarActive, 'layout-wrapper-skin-active':skinListActive}"
+  style="background-color: rgb(69, 138, 138);">
 
   <div class="btn-row" style="display: inline-block;position: fixed;right: 0;top: 0;padding: 20px;">
     <button (click)="loginOut()">登出</button>
@@ -10,7 +11,7 @@
         <div class="ui-g-12 nav-bar" id="topbar-menu-div" style="background-color: rgb(143, 224, 224);">
           <div class="nav-move">
             <p-menubar [model]="items" (toggle)="toggle($event)" [expanded]="true">
-              <ng-template pTemplate="date" let-item="rowData">
+              <ng-template let-item="rowData">
                 <a [routerLink]="[item.routerLink]">{{item.label}}</a>
               </ng-template>
             </p-menubar>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
-import { MENU_LIST } from './menu-config';
+import { MENU_LIST, MENU_LIST1 } from './menu-config';
 
 @Component({
   selector: 'app-general',
@@ -13,12 +13,13 @@ export class GeneralComponent {
 
   items: MenuItem[];
 
-  menuList = MENU_LIST;
+  menuList: MenuItem[];
 
   constructor(
     private router: Router
   ) {
     this.items = MENU_LIST;
+    this.menuList = MENU_LIST1;
   }
 
   loginOut() {
